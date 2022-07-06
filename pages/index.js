@@ -132,7 +132,7 @@ export default function Home({resume}) {
   )
 }
 export async function getServerSideProps(context){
-  const linkdb = 'http://localhost:5000/';
+  const linkdb = 'https://backend-cv-id.herokuapp.com/';
   const respondb = await fetch(linkdb);
   const datajson = await respondb.json();
   
